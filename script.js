@@ -8,7 +8,7 @@ createApp({
         './img/img.2.jpg',
         './img/img.3.jpg',
         './img/img.4.jpg',
-        './img/img.5.jpeg'
+        './img/img.5.jpg'
       ],
 
       indexImage:2,
@@ -16,6 +16,20 @@ createApp({
   },
 
   methods: {
+    bottomButton(){
+        if(this.indexImage == this.imagesContainer.length - 1){
+            this.indexImage = 0;
+        }else{
+            this.indexImage = this.indexImage + 1;
+        }
+    },
 
+    topButton(){
+        if(this.indexImage == this.imagesContainer.length - 1){
+            this.indexImage = 0;
+        }else{
+            this.indexImage = this.indexImage + 1;
+        }
+    }
   }
 }).mount('#app');

@@ -22,8 +22,12 @@
         <main class="flex">
             <div class="jumbo">
                 <img :src="imagesContainer[indexImage]" alt="">
-                <button class="top-button"><i class="fa-solid fa-poo fa-3x" style="color: #613030;"></i></button>
-                <button class="bottom-button"><i class="fa-solid fa-hippo fa-3x" style="color: #400080;"></i></button>
+                <button class="top-button" @click="bottomButton()">
+                    <i class="fa-solid fa-poo fa-3x" style="color: #613030;"></i>
+                </button>
+                <button class="bottom-button" @click="topButton()">
+                    <i class="fa-solid fa-hippo fa-3x" style="color: #400080;"></i>
+                </button>
             </div>
             <div class="thumbnail-container flex-centered">
 

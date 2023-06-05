@@ -36,5 +36,21 @@ createApp({
         this.indexImage= index;
     },
 
-  }
+    nextImages(){
+        myTimeout = setInterval(()=> {
+        indexImage + 1;
+    
+        if(indexImage == imagesContainer.length - 1){
+            indexImage = 0;
+        }else{
+            indexImage = indexImage + 1;
+        }
+    },3000);
+}
+  },
+
+  beforeCrate() {
+    this.nextImages();
+  },
+
 }).mount('#app');

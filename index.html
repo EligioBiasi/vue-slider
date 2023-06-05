@@ -29,8 +29,10 @@
                     <i class="fa-solid fa-hippo fa-3x" style="color: #400080;"></i>
                 </button>
             </div>
-            <div class="thumbnail-container flex-centered">
-
+            <div class="flex-centered thumbnail-container">
+                <div class="thumbnail" v-for="(image, index) in imagesContainer">
+                    <img src="image" alt="">
+                </div>
             </div>
         </main>
     </div>

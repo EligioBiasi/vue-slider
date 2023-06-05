@@ -43,11 +43,23 @@ i{
 div.jumbo{
     position: relative;
 }
+
 div.thumbnail-container{
     width: 20%;
     height: 100%;
-    background-color: pink;
 }
+
+div.thumbnail{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    height: calc(100%/5);
+}
+
+div.thumbnail img{
+    width: 100%;
+}
+
 .top-button,
 .bottom-button{
     width: 50px;

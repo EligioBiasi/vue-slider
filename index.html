@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="flex-centered flex">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     
     <div id="app">
-       
+        <header>
+            <h1 class="text-centered">
+                Slider
+            </h1>
+        </header>
+        <main class="flex">
+            <div class="jumbo">
+                <img :src="imagesContainer[indexImage]" alt="">
+                <button class="top-button"><i class="fa-solid fa-poo fa-3x" style="color: #613030;"></i></button>
+                <button class="bottom-button"><i class="fa-solid fa-hippo fa-3x" style="color: #400080;"></i></button>
+            </div>
+            <div class="thumbnail-container flex-centered">
+
+            </div>
+        </main>
     </div>
 
 

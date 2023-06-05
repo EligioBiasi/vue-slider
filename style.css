@@ -88,6 +88,14 @@ header h1{
     color: whitesmoke;
 }
 
+div.thumbnail.active img{
+    filter: brightness(110%);
+}
+
+div.thumbnail img{
+    filter: blur(2px);
+}
+
 main img{
     width: 100%;
     height: 100%;

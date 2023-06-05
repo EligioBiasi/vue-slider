@@ -30,8 +30,8 @@
                 </button>
             </div>
             <div class="flex-centered thumbnail-container">
-                <div class="thumbnail" v-for="(image, index) in imagesContainer">
-                    <img src="image" alt="">
+                <div class="thumbnail" v-for="(image,index) in imagesContainer" :class="{active: index == indexImage}">
+                    <img :src="image" alt="random images">
                 </div>
             </div>
         </main>

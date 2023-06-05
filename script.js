@@ -17,10 +17,10 @@ createApp({
 
   methods: {
     bottomButton(){
-        if(this.indexImage == this.imagesContainer.length - 1){
-            this.indexImage = 0;
+        if(this.indexImage == 0){
+            this.indexImage = this.imagesContainer.length - 1;
         }else{
-            this.indexImage = this.indexImage + 1;
+            this.indexImage = this.indexImage -1;
         }
     },
 
@@ -30,6 +30,8 @@ createApp({
         }else{
             this.indexImage = this.indexImage + 1;
         }
-    }
+    },
+
+
   }
 }).mount('#app');

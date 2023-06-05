@@ -32,6 +32,9 @@ createApp({
         }
     },
 
+    setIndexImage(index) { 
+        this.indexImage= index;
+    },
 
   }
 }).mount('#app');

@@ -30,7 +30,7 @@
                 </button>
             </div>
             <div class="flex-centered thumbnail-container">
-                <div class="thumbnail" v-for="(image,index) in imagesContainer" :class="{active: index == indexImage}">
+                <div class="thumbnail" v-for="(image,index) in imagesContainer" :class="{active: index == indexImage}" @click="setIndexImage(index)" >
                     <img :src="image" alt="random images">
                 </div>
             </div>

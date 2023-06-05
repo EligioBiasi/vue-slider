@@ -93,7 +93,7 @@ div.thumbnail.active img{
 }
 
 div.thumbnail img{
-    filter: blur(2px);
+    filter: blur(3px);
 }
 
 main img{

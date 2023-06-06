@@ -18,9 +18,6 @@ main{
     border-radius: 1rem;
 }
 
-i{
-    color: white;
-}
 /* general class */
 .flex{
     display: flex;
@@ -40,25 +37,7 @@ i{
     flex-direction: column;
 }
 
-div.jumbo{
-    position: relative;
-}
 
-div.thumbnail-container{
-    width: 20%;
-    height: 100%;
-}
-
-div.thumbnail{
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-    height: calc(100%/5);
-}
-
-div.thumbnail img{
-    width: 100%;
-}
 
 .top-button,
 .bottom-button{
@@ -109,14 +88,23 @@ div.img-container{
     height: 100%;
 }
 
-footer button{
-    background-color: salmon;
-    border: none;
-    margin: 1.5rem 1rem;
-    cursor: pointer;
+div.jumbo{
+    position: relative;
 }
 
-footer button i:active{
-    color: gray;
-    
+div.thumbnail-container{
+    width: 20%;
+    height: 100%;
 }
+
+div.thumbnail{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    height: calc(100%/5);
+}
+
+div.thumbnail img{
+    width: 100%;
+}
+

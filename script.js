@@ -38,18 +38,18 @@ createApp({
 
     nextImages(){
         myTimeout = setInterval(()=> {
-        indexImage + 1;
+        this.indexImage + 1;
     
-        if(indexImage == imagesContainer.length - 1){
-            indexImage = 0;
+        if(this.indexImage == this.imagesContainer.length - 1){
+            this.indexImage = 0;
         }else{
-            indexImage = indexImage + 1;
+            this.indexImage = this.indexImage + 1;
         }
     },3000);
 }
   },
 
-  beforeCrate() {
+  mounted() {
     this.nextImages();
   },
 
